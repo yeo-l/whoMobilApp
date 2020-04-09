@@ -1,20 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <section padding="true" marging="true">
+      <h4> <strong>Period:</strong>  2020/04/01 <br>
+        <strong>Organit Name:</strong>  District Yamoussoukro <br>
+        <strong>Data:</strong>  VIH - CAIR<br>
+      </h4>
+    </section>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <a routerLink='../../completude'>
+          <ion-card text-center padding color="primary">
+            <ion-icon name="podium"></ion-icon>
+            <h2>Completude</h2>
+          </ion-card>
+        </a>
+      </ion-col>
+      <ion-col col-6>
+        <a routerLink='../../data'>
+          <ion-card text-center padding color="primary">
+            <ion-icon name="globe"></ion-icon>
+            <h2>D Consinsty</h2>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <a routerLink='../../time'>
+          <ion-card text-center padding color="primary">
+            <ion-icon name="pulse"></ion-icon>
+            <h2>T Consinsty</h2>
+          </ion-card>
+        </a>
+      </ion-col>
+      <ion-col col-6>
+        <a routerLink='../../analytic'>
+          <ion-card text-center padding color="primary">
+            <ion-icon name="analytics"></ion-icon>
+            <h2>Analytics</h2>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+<ion-footer>
+  <ion-card color="danger">
+    <ion-card-content>
+      <h4>Model of IVICO - JSI</h4><br>
+    </ion-card-content>
+  </ion-card>
+</ion-footer>

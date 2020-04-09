@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>completude</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <section padding="true" marging="true">
+      <h4> <strong>Period:</strong>  2020/04/01 <br>
+        <strong>Organit Name:</strong>  District Yamoussoukro <br>
+        <strong>Data:</strong>  VIH - CAIR<br>
+      </h4>
+    </section>
+  </ion-card>
+  <ion-card>
+      <div class="chart-wrapper">
+        <canvas baseChart height="300" width= "400;"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+                [plugins]="lineChartPlugins"
+                (chartClick)="onChartClick($event)">>
+        </canvas>
+      </div>
+  </ion-card>
+  <ion-card>
+    <div class="chart-wrapper">
+      <canvas baseChart height="300" width= "300;"
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [colors]="barChartColors"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+    </div>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-card color="danger">
+    <ion-card-content>
+      <h6>Model of IVICO - JSI</h6>
+    </ion-card-content>
+  </ion-card>
+</ion-footer>

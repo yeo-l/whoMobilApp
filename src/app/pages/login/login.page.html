@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+  <div class="center" align="center" padding="true">
+    <img src="../assets/logo.jpg" style="width: 150px" class="smallLogo"/>
+    <h1>Sign In</h1>
+  </div>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input autocomplete="off" type="text" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input autocomplete="off" type="password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item lines='none'>
+        <a routerLink='/signup'>Create Account</a>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" share="round" color="success" routerLink='../menu/parametrage'>Login</ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-card color="danger">
+    <ion-card-content>
+      <h4>Model of IVICO - JSI</h4><br>
+    </ion-card-content>
+  </ion-card>
+</ion-footer>

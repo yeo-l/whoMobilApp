@@ -1,0 +1,43 @@
+<ion-header collapse="condense" [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title size="large">
+      Setting <ion-icon name="settings"></ion-icon>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title><h4 style="text-align: center">Formulaire d'Information</h4></ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <form>
+    <ion-card-content>
+
+      <ion-item>
+        <label> Periode :</label>
+        <ion-datetime display-format="MM YYYY" min="2000" max="2020" value="2020-04"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <label> Data :</label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <label> Organit Unite :</label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button expand="block" share="round" color="success" routerLink='../../home'>Send</ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-card color="danger">
+    <ion-card-content>
+      <h4>Model of IVICO - JSI</h4><br>
+    </ion-card-content>
+  </ion-card>
+</ion-footer>
